@@ -78,7 +78,10 @@
                             @if (Route::has('login'))
                                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                     @auth
-                            <li> <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a></li>
+                            <li> <x-app-layout>
+
+                                </x-app-layout>
+                            </li>
                                     @else
                             <li> <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a></li>
 
@@ -160,13 +163,13 @@
                     <p>MIST Cafe is one of the best restaurant. Please contact us for more information.</p>
                     <div class="row">
                         <div class="col-4">
-                            <img src="assets/images/about-thumb-01.jpg" alt="">
+                            <img src="assets/images/menu-item-01.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img src="assets/images/about-thumb-02.jpg" alt="">
+                            <img src="assets/images/menu-item-02.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img src="assets/images/about-thumb-03.jpg" alt="">
+                            <img src="assets/images/menu-item-03.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -237,42 +240,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class='card card4'>
-                        <div class="price"><h6>$10</h6></div>
-                        <div class='info'>
-                            <h1 class='title'>Coaster</h1>
-                            <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                            <div class="main-text-button">
-                                <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card5'>
-                        <div class="price"><h6>$8.50</h6></div>
-                        <div class='info'>
-                            <h1 class='title'>Ambulance</h1>
-                            <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                            <div class="main-text-button">
-                                <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card3'>
-                        <div class="price"><h6>$7.25</h6></div>
-                        <div class='info'>
-                            <h1 class='title'>Bus</h1>
-                            <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                            <div class="main-text-button">
-                                <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
             </div>
         </div>
     </div>
@@ -396,8 +366,8 @@
         <div class="row">
             <div class="col-lg-4 offset-lg-4 text-center">
                 <div class="section-heading">
-                    <h6>Klassy Week</h6>
-                    <h2>This Week’s Special Meal Offers</h2>
+                    <h6>Welcome</h6>
+                    <h2>Today's Vehicle Status</h2>
                 </div>
             </div>
         </div>
@@ -409,9 +379,9 @@
                             <div class="row">
                                 <div class="col-lg-6 offset-lg-3">
                                     <ul>
-                                        <li><a href='#tabs-1'><img src="assets/images/tab-icon-01.png" alt="">Breakfast</a></li>
-                                        <li><a href='#tabs-2'><img src="assets/images/tab-icon-02.png" alt="">Lunch</a></a></li>
-                                        <li><a href='#tabs-3'><img src="assets/images/tab-icon-03.png" alt="">Dinner</a></a></li>
+                                        <li><a href='#tabs-1'><img src="assets/images/tab-icon-01.png" alt="">Morning(0600-1200)</a></li>
+                                        <li><a href='#tabs-2'><img src="assets/images/tab-icon-02.png" alt="">Noon(1200-1800)</a></a></li>
+                                        <li><a href='#tabs-3'><img src="assets/images/tab-icon-03.png" alt="">Night(1800-2200)</a></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -426,31 +396,31 @@
                                             <div class="left-list">
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-01.png" alt="">
-                                                        <h4>Fresh Chicken Salad</h4>
+                                                        <img src="assets/images/menu-item-01.jpg" alt="">
+                                                        <h4>Pajero</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$10.50</h6>
+                                                            <h6>90KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-02.png" alt="">
-                                                        <h4>Orange Juice</h4>
+                                                        <img src="assets/images/menu-item-02.jpg" alt="">
+                                                        <h4>3Ton</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>8.50</h6>
+                                                            <h6>50KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-03.png" alt="">
-                                                        <h4>Fruit Salad</h4>
+                                                        <img src="assets/images/menu-item-03.jpg" alt="">
+                                                        <h4>Jeep</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$9.90</h6>
+                                                            <h6>40KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -462,31 +432,31 @@
                                             <div class="right-list">
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-04.png" alt="">
-                                                        <h4>Eggs Omelette</h4>
+                                                        <img src="assets/images/menu-item-04.jpg" alt="">
+                                                        <h4>Pick Up</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$6.50</h6>
+                                                            <h6>66KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-05.png" alt="">
-                                                        <h4>Dollma Pire</h4>
+                                                        <img src="assets/images/menu-item-05.jpg" alt="">
+                                                        <h4>Ambulance</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$5.00</h6>
+                                                            <h6>58KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-06.png" alt="">
-                                                        <h4>Omelette & Cheese</h4>
+                                                        <img src="assets/images/menu-item-06.jpg" alt="">
+                                                        <h4>Bus</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$4.10</h6>
+                                                            <h6>78KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -500,36 +470,39 @@
                                     <div class="col-lg-6">
                                         <div class="row">
                                             <div class="left-list">
+
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-04.png" alt="">
-                                                        <h4>Eggs Omelette</h4>
+                                                        <img src="assets/images/menu-item-02.jpg" alt="">
+                                                        <h4>3Ton</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$14</h6>
+                                                            <h6>80KM</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12">
+                                                    <div class="tab-item">
+                                                        <img src="assets/images/menu-item-01.jpg" alt="">
+                                                        <h4>Pajero</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                        <div class="price">
+                                                            <h6>56KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-05.png" alt="">
-                                                        <h4>Dollma Pire</h4>
+                                                        <img src="assets/images/menu-item-04.jpg" alt="">
+                                                        <h4>Pick Up</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$18</h6>
+                                                            <h6>79KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12">
-                                                    <div class="tab-item">
-                                                        <img src="assets/images/tab-item-06.png" alt="">
-                                                        <h4>Omelette & Cheese</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
-                                                        <div class="price">
-                                                            <h6>$22</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -538,31 +511,32 @@
                                             <div class="right-list">
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-01.png" alt="">
-                                                        <h4>Fresh Chicken Salad</h4>
+                                                        <img src="assets/images/menu-item-03.jpg" alt="">
+                                                        <h4>Jeep</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$10</h6>
+                                                            <h6>60KM</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12">
+                                                    <div class="tab-item">
+                                                        <img src="assets/images/menu-item-05.jpg" alt="">
+                                                        <h4>Ambulance</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                        <div class="price">
+                                                            <h6>39KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-02.png" alt="">
-                                                        <h4>Orange Juice</h4>
+                                                        <img src="assets/images/menu-item-01.jpg" alt="">
+                                                        <h4>Pajero</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$20</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="tab-item">
-                                                        <img src="assets/images/tab-item-03.png" alt="">
-                                                        <h4>Fruit Salad</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
-                                                        <div class="price">
-                                                            <h6>$30</h6>
+                                                            <h6>73KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -578,31 +552,31 @@
                                             <div class="left-list">
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-05.png" alt="">
-                                                        <h4>Eggs Omelette</h4>
+                                                        <img src="assets/images/menu-item-05.jpg" alt="">
+                                                        <h4>Ambulance</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$14</h6>
+                                                            <h6>56KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-03.png" alt="">
-                                                        <h4>Orange Juice</h4>
+                                                        <img src="assets/images/menu-item-06.jpg" alt="">
+                                                        <h4>Bus</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$18</h6>
+                                                            <h6>40KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-02.png" alt="">
-                                                        <h4>Fruit Salad</h4>
+                                                        <img src="assets/images/menu-item-01.jpg" alt="">
+                                                        <h4>Pajero</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$10</h6>
+                                                            <h6>60KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -614,31 +588,31 @@
                                             <div class="right-list">
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-06.png" alt="">
-                                                        <h4>Fresh Chicken Salad</h4>
+                                                        <img src="assets/images/menu-item-02.jpg" alt="">
+                                                        <h4>3Ton</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$8.50</h6>
+                                                            <h6>110KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-01.png" alt="">
-                                                        <h4>Dollma Pire</h4>
+                                                        <img src="assets/images/menu-item-03.jpg" alt="">
+                                                        <h4>Jeep</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$9</h6>
+                                                            <h6>90KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
-                                                        <img src="assets/images/tab-item-04.png" alt="">
-                                                        <h4>Omelette & Cheese</h4>
+                                                        <img src="assets/images/menu-item-04.jpg" alt="">
+                                                        <h4>Pick UP</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$11</h6>
+                                                            <h6>110KM</h6>
                                                         </div>
                                                     </div>
                                                 </div>

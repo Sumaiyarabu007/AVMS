@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MtncoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +18,26 @@ use App\Http\Controllers\AdminController;
 
 
 Route::get("/",[HomeController::class,"index"]);
+Route::get("/redirects",[HomeController::class,"redirects"]);
+
 Route::get("/users",[AdminController::class,"user"]);
 
-Route::get("/redirects",[HomeController::class,"redirects"]);
+
+Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
+
+
+Route::get("/jeeplist",[MtncoController::class,"jeeplist"]);
+Route::get("/ton",[MtncoController::class,"ton"]);
+Route::get("/pickup",[MtncoController::class,"pickup"]);
+Route::get("/jeep1",[MtncoController::class,"jeep1"]);
+Route::get("/addjeep",[MtncoController::class,"addjeep"]);
+
+Route::get("/drivers",[MtncoController::class,"drivers"]);
+Route::get("/requestlist",[MtncoController::class,"requestlist"]);
+Route::get("/adddriver",[MtncoController::class,"adddriver"]);
+Route::get("/addrequest",[MtncoController::class,"addrequest"]);
+Route::post("/requestlist",[MtncoController::class,"requestlist"]);
+
 
 
 

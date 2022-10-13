@@ -8,12 +8,12 @@
                 <div class="profile-desc">
                     <div class="profile-pic">
                         <div class="count-indicator">
-                            <img class="img-xs rounded-circle " src="admin/assets/images/faces/face28.jpg" alt="">
+                            <img class="img-xs rounded-circle " src="admin/assets/images/faces/face27.jpg" alt="">
                             <span class="count bg-success"></span>
                         </div>
                         <div class="profile-name">
-                            <h5 class="mb-0 font-weight-normal">Capt Sumaiya</h5>
-                            <span>QM</span>
+                            <h5 class="mb-0 font-weight-normal">Sgt Monir</h5>
+                            <span>MT Nco</span>
                         </div>
                     </div>
                     <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -56,14 +56,7 @@
             <li class="nav-item nav-category">
                 <span class="nav-link">Navigation</span>
             </li>
-            <li class="nav-item menu-items">
-                <a class="nav-link" href="{{url('/users')}}">
-              <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
-              </span>
-                    <span class="menu-title">Users</span>
-                </a>
-            </li>
+
             <li class="nav-item menu-items">
                 <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
@@ -74,14 +67,14 @@
                 </a>
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/jeeplist')}}">Jeeplist</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/ton')}}">ton</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/pickup')}}">Pickup</a></li>
                     </ul>
                 </div>
             </li>
             <li class="nav-item menu-items">
-                <a class="nav-link" href="pages/forms/basic_elements.html">
+                <a class="nav-link" href="{{url('/drivers')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
@@ -97,7 +90,7 @@
                 </a>
             </li>
             <li class="nav-item menu-items">
-                <a class="nav-link" href="pages/charts/chartjs.html">
+                <a class="nav-link" href="{{url('/requestlist')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>
@@ -109,7 +102,7 @@
 
 
 
-            <!-- partial -->
+        <!-- partial -->
 
     </nav>
 </div>
