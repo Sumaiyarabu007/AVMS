@@ -15,18 +15,19 @@ return new class extends Migration
     {
         Schema::create('requestlist', function (Blueprint $table) {
             $table->id();
-            $table->date("date")->nullable();
-            $table->string("v_id")->nullable();
-            $table->string("driver's_name")->nullable();
-            $table->string("2nd_seater's_name")->nullable();
-            $table->string("authority")->nullable();
-            $table->string("destination")->nullable();
-            $table->string("km_reading")->nullable();
-            $table->time("start_time")->nullable();
-            $table->time("probable_end_time")->nullable();
-            $table->string("present_fuel")->nullable();
-            $table->date("last_maintenance_date")->nullable();
-            $table->date("comment")->nullable();
+            $table->date("date");
+            $table->string("vehicle_type");
+            $table->string("v_id")->unique();
+            $table->string("driver's_name");
+            $table->string("2nd_seater's_name");
+            $table->string("authority");
+            $table->string("destination");
+            $table->string("km_reading");
+            $table->time("start_time");
+            $table->time("probable_end_time");
+            $table->string("present_fuel");
+            $table->date("last_maintenance_date");
+            $table->date("comment");
             $table->timestamps();
         });
     }

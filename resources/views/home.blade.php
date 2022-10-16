@@ -61,7 +61,7 @@
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                         <li class="scroll-to-section"><a href="#about">About</a></li>
-                        <li class="scroll-to-section"><a href="#menu">Menu</a></li>
+                
                         <li class="scroll-to-section"><a href="#chefs">Drivers</a></li>
                         <li class="submenu">
                             <a href="javascript:;">Vehicles</a>
@@ -206,9 +206,9 @@
             <div class="owl-menu-item owl-carousel">
                 <div class="item">
                     <div class='card card1'>
-                        <div class="price"><h6>$14</h6></div>
+                        <div class="price"><h6>50km</h6></div>
                         <div class='info'>
-                            <h1 class='title'>Jeep</h1>
+                            <h1 class='title'>Pickup</h1>
                             <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                             <div class="main-text-button">
                                 <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
@@ -218,9 +218,9 @@
                 </div>
                 <div class="item">
                     <div class='card card2'>
-                        <div class="price"><h6>$22</h6></div>
+                        <div class="price"><h6>66km</h6></div>
                         <div class='info'>
-                            <h1 class='title'>Pick up</h1>
+                            <h1 class='title'>3Ton</h1>
                             <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                             <div class="main-text-button">
                                 <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
@@ -230,9 +230,9 @@
                 </div>
                 <div class="item">
                     <div class='card card3'>
-                        <div class="price"><h6>$18</h6></div>
+                        <div class="price"><h6>87km</h6></div>
                         <div class='info'>
-                            <h1 class='title'>3Ton</h1>
+                            <h1 class='title'>Jeep</h1>
                             <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                             <div class="main-text-button">
                                 <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
@@ -379,9 +379,9 @@
                             <div class="row">
                                 <div class="col-lg-6 offset-lg-3">
                                     <ul>
-                                        <li><a href='#tabs-1'><img src="assets/images/tab-icon-01.png" alt="">Morning(0600-1200)</a></li>
-                                        <li><a href='#tabs-2'><img src="assets/images/tab-icon-02.png" alt="">Noon(1200-1800)</a></a></li>
-                                        <li><a href='#tabs-3'><img src="assets/images/tab-icon-03.png" alt="">Night(1800-2200)</a></a></li>
+                                        <li><a href='#tabs-1'>Morning(0600-1200)</a></li>
+                                        <li><a href='#tabs-2'>Noon(1200-1800)</a></a></li>
+                                        <li><a href='#tabs-3'>Night(1800-2200)</a></a></li>
                                     </ul>
                                 </div>
                             </div>

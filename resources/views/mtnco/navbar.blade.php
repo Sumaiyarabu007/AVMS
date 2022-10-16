@@ -1,7 +1,7 @@
 
-<div class="container-scroller">
+<div class="container-scroller" style="background-color:White">
     <!-- partial:partials/_sidebar.html -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color:#092E20">
 
         <ul class="nav">
             <li class="nav-item profile">
@@ -67,8 +67,8 @@
                 </a>
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="{{url('/jeeplist')}}">Jeeplist</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{url('/ton')}}">ton</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/jeeplist')}}">Jeep</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/ton')}}">3ton</a></li>
                         <li class="nav-item"> <a class="nav-link" href="{{url('/pickup')}}">Pickup</a></li>
                     </ul>
                 </div>

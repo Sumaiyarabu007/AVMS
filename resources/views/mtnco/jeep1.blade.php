@@ -15,13 +15,14 @@
 
 </head>
 <body>
-<div class="container-scroller">
+    
+<div class="container-scroller" style="background-color:White">
     @include("mtnco.navbar")
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">Jeep1</h2>
+                    <h2 class="heading-section" style="color:black;">Jeep1</h2>
                 </div>
             </div>
             <div class="row">
@@ -110,6 +111,10 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            
             <a href="{{url('/adddriver')}}">ADD Info</a>
         </div>
     </section>
@@ -120,7 +125,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
-@include("admin.adminscript")
+@include("mtnco.mtncoscript")
 
 </body>
 </html>

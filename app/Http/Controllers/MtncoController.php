@@ -65,30 +65,30 @@ class MtncoController extends Controller
         return view("mtnco.addrequest",compact("data"));
     }
 
-    public function requestlist(Request $request)
+    
+    
+    public function upload(Request $request)
     {
-        $data=new request;
-     $data->date=$request->date;
-     $data->v_id=$request->v_id;
-     $data->driver_name=$request->driver_name;
-     $data->second_seater_name=$request->second_seater_name;
-     $data->v_id=$request->v_id;
+        $data= new requestlist;
 
-     $data->authority=$request->authority;
-     $data->destination=$request->destination;
-     $data->km_reading=$request->km_reading;
-     $data->start_time=$request->start_time;
-     $data->probable_end_time=$request->probable_end_time;
-     $data->present_fuel=$request->present_fuel;
-     $data->last_maintenance_date=$request->last_maintenance_date;
-     $data->comment=$request->comment;
-$data->submit();
-return redirect()->back();
-
-     
-     
-
+        $data->date =$request->date;
+        $data->v_id =$request->v_id;
+        $data->drivers_name =$request->drivers_name;
+        $data->second_seatrers_name =$request->second_seaters_name;
+        $data->authority =$request->authority;
+        $data->destination =$request->destination;
+        $data->km_reading =$request->km_reading;
+        $data->start_time =$request->start_time;
+        $data->probable_end_time =$request->probable_end_time;
+        $data->last_maintenace_date =$request->last_maintenance_date;
+        $data->comment =$request->comment;
+        $data->save();
+        return redirect() ->back() ;
     }
+
+     
+     
+
    
 
     

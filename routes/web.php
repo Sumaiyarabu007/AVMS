@@ -36,8 +36,6 @@ Route::get("/drivers",[MtncoController::class,"drivers"]);
 Route::get("/requestlist",[MtncoController::class,"requestlist"]);
 Route::get("/adddriver",[MtncoController::class,"adddriver"]);
 Route::get("/addrequest",[MtncoController::class,"addrequest"]);
-Route::post("/requestlist",[MtncoController::class,"requestlist"]);
-
 
 
 
