@@ -1,5 +1,5 @@
 
-<div class="container-scroller">
+<div class="container-scroller" style="background-color:White">
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
 

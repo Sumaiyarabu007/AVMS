@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Jeep1 Info</title>
+    <title>Pickup Info</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -29,88 +29,92 @@
                     <form id="contact" action="" method="post">
                       <div class="row">
                         <div class="col-lg-12">
-                            <h4>ADD DRIVERS</h4>
+                            <h4>ADD PICKUP</h4>
                         </div>
 
 
 
-
+                        <div class="col-lg-6">
+                        <h6 style="color:black;">Date</h6>
+                            <div id="filterDate2">    
+                              <div class="input-group date" data-date-format="dd/mm/yyyy">
+                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                <div class="input-group-addon" >
+                                  <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                              </div>
+                            </div>   
+                        </div>
                         
                         <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Snk No.</h6>
+                        <h6 style="color:black;">Authority</h6>
                           <fieldset>
-                            <input name="digit" type="digit" placeholder="" required="">
+                            <input name="name" type="text" placeholder="" required="">
                           </fieldset>
                         </div>
 
                         <div class="col-lg-6 col-sm-12">
-                           <h6 style="color:black;">Rank</h6>
+                        <h6 style="color:black;">Destination</h6>
                           <fieldset>
-                          <select value="type" name="type" id="type">
-                        <option value="Authority"></option>
-                         <option name="Training" id="Training">Snk</option>
-                         <option name="Admin" id="Admin">Lcpl</option>
-                      <option name="Ammenity" id="Ammenity">Cpl</option>
-                      <option name="Ammenity" id="Ammenity">Sgt</option>
-                         </select>
-       
+                            <input name="place" type="place" id="place" placeholder="" required="">
+                          </fieldset>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">KM Reading</h6>
+                          <fieldset>
+                            <input name="distance" type="distance" id="distance" placeholder="" required="">
+                          </fieldset>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">When Out</h6>
+                          <fieldset>
+                          <input name="time" type="time" id="time" placeholder="when Out" required="">
                         </fieldset>
-                       </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Name</h6>
-                          <fieldset>
-                            <input name="name" type="name" id="name" placeholder="" required="">
-                          </fieldset>
+                        
                         </div>
 
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">When In</h6>
+                          <fieldset>
+                          <input name="time" type="time" id="time" placeholder="when In" required="">
+                        </fieldset>
+                        
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">Present Fuel</h6>
+                          <fieldset>
+                          <input name="fuel" type="litre" id="litre" placeholder="" required="">
+                        </fieldset>
+                        
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">Last Refuelling Date</h6>
+                        <div id="filterDate2">    
+                              <div class="input-group date" data-date-format="dd/mm/yyyy">
+                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                <div class="input-group-addon" >
+                                  <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                              </div>
+                            </div>   
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">Last Maintenace Date</h6>
+                        <div id="filterDate2">    
+                              <div class="input-group date" data-date-format="dd/mm/yyyy">
+                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                <div class="input-group-addon" >
+                                  <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                              </div>
+                            </div>   
+                        </div>
                        
-
-            
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Date of Birth</h6>
-                        <div id="filterDate2">    
-                              <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                <div class="input-group-addon" >
-                                  <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                              </div>
-                            </div>   
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">License Expire Date</h6>
-                        <div id="filterDate2">    
-                              <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                <div class="input-group-addon" >
-                                  <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                              </div>
-                            </div>   
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                           <h6 style="color:black;">Able to Drive</h6>
-                          <fieldset>
-                          <select value="type" name="type" id="type">
-                        <option value="Authority"></option>
-                         <option name="Training" id="Training">Only Jeep</option>
-                         <option name="Admin" id="Admin">Jeep, Pickup</option>
-                      <option name="Ammenity" id="Ammenity">Jeep, Pickup,3Ton</option>
-                         </select>
-       
-                        </fieldset>
-                       </div>
-
-                       <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Experienced</h6>
-                          <fieldset>
-                            <input name="year" type="year" id="year" placeholder="" required="">
-                          </fieldset>
-                        </div>
-
                         <br> 
                         <div class="col-lg-6 col-sm-12">
                         <h6 style="color:black;">Comments</h6>
@@ -123,12 +127,12 @@
                             <button type="submit" id="form-submit" class="main-button-icon">Submit</button>
                           </fieldset>
                         </div>
-                          
-
 
                        
                       </div>
                     </form>
+
+
                 </div>
             </div>
         </div>

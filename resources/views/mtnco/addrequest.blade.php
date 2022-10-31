@@ -26,7 +26,7 @@
              
             <div class="col-lg-6">
                 <div class="contact-form">
-                    <form id="contact" action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
+                    <form id="contact" action="/requestlist" method="post" enctype="multipart/form-data">
 
                         @csrf 
 
@@ -36,60 +36,64 @@
                         </div>
 
 
+            <!--<div class="col-lg-6">
 
-                        <div class="col-lg-6">
-    <h6 style="color:black;">Date</h6>
+            <h6 style="color:black;">Date</h6>
         <div id="filterDate2">    
           <div class="input-group date" data-date-format="dd/mm/yyyy">
-            <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-            <div class="input-group-addon" >
-              <span class="glyphicon glyphicon-th"></span>
-            </div>
+            <input type="date" name="date" value="date-one" >
+            
           </div>
         </div>   
-    </div>
+    </div> -->
+
+
+<div class="col-lg-6">
+<h6 style="color:black;">Date</h6>
+    <input type="date" name="date" value="date-one" >
+</div>
+
 
     <div class="col-md-6 col-sm-12">
     <h6 style="color:black;">Vehicle Type</h6>
       <fieldset>
-        <select value="type" name="type" id="type">
-            <option value="type">Type</option>
-            <option name="Jeep" id="Jeep">Jeep</option>
-            <option name="Pickup" id="Pickup">Pickup</option>
-            <option name="3Ton" id="3Ton">3Ton</option>
-        </select>
-      </fieldset>
+      <select name="vehicle_type" id="cars">
+  <option value="jeep">Jeep</option>
+  <option value="pickup">Pickup</option>
+  <option value="3ton">3Ton</option>
+  <option value="ambulance">Ambulance</option>
+</select>      </fieldset>
     </div>
 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">V_ID</h6>
       <fieldset>
-        <input name="name" type="text" placeholder="" required="">
+        <input name="v_id" type="text" placeholder="" required="">
       </fieldset>
     </div>
 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Driver's Name</h6>
       <fieldset>
-        <input name="name" type="text" placeholder="" required="">
+        <input name="drivers_name" type="text" placeholder="" required="">
       </fieldset>
     </div>
 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">2nd Seater's Name</h6>
       <fieldset>
-        <input name="name" type="text" placeholder="" required="">
+        <input name="second_seater_name" type="text" placeholder="" required="">
       </fieldset>
     </div>
     
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Authority</h6>
       <fieldset>
-      <select value="type" name="type" id="type">
+      <select name="authority" id="type">
             <option value="Authority">Authority</option>
-            <option name="Training" id="Training">Training</option>
-            <option name="Admin" id="Admin">Admin</option>
-            <option name="Ammenity" id="Ammenity">Ammenity</option>
+            <option value="Training" id="Training">Training</option>
+            <option value="Admin" id="Admin">Admin</option>
+            <option value="Ammenity" id="Ammenity">Ammenity</option>
         </select>
        
       </fieldset>
@@ -98,21 +102,21 @@
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Destination</h6>
       <fieldset>
-        <input name="place" type="place" id="place" placeholder="" required="">
+        <input name="destination" type="place" id="place" placeholder="" required="">
       </fieldset>
     </div>
 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">KM Reading</h6>
       <fieldset>
-        <input name="distance" type="distance" id="distance" placeholder="" required="">
+        <input name="km_reading" type="distance" id="distance" placeholder="" required="">
       </fieldset>
     </div>
 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Start Time</h6>
       <fieldset>
-      <input name="time" type="time" id="time" placeholder="when Out" required="">
+      <input name="start_time" type="time" id="time" placeholder="when Out" required="">
     </fieldset>
     
     </div>
@@ -120,7 +124,7 @@
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Probable End Time</h6>
       <fieldset>
-      <input name="time" type="time" id="time" placeholder="when In" required="">
+      <input name="probable_end_time" type="time" id="time" placeholder="when In" required="">
     </fieldset>
     
     </div>
@@ -133,24 +137,30 @@
     </div>
 
 
+    <div class="col-lg-6">
+<h6 style="color:black;">Last Maintenance Date</h6>
+    <input type="date" name="last_maintenance_date" value="date-two">
+</div>
+
+<!-- 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Last Maintenace Date</h6>
     <div id="filterDate2">    
           <div class="input-group date" data-date-format="dd/mm/yyyy">
-            <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+            <input  name="date" id="date" type="date" class="form-control" placeholder="dd/mm/yyyy">
             <div class="input-group-addon" >
               <span class="glyphicon glyphicon-th"></span>
             </div>
           </div>
         </div>   
-    </div>
+    </div> -->
    
 
     <br> 
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Comments</h6>
       <fieldset>
-        <textarea name="message" rows="6" id="message" placeholder="" required=""></textarea>
+        <textarea name="comment" rows="6" id="message" placeholder="" required=""></textarea>
       </fieldset>
     </div>
     <div class="col-lg-12">

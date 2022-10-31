@@ -21,8 +21,8 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section" style="color:black;">Jeep1</h2>
+                <div class="col-lg-6 text-center mb-5" style="top:20px;">
+                    <h2 class="heading-section" style="color:black;">REQUEST LIST</h2>
                 </div>
             </div>
             <div class="row">
@@ -32,76 +32,111 @@
                             <thead class="thead-dark">
                                 
                             <tr>
-                                <th>Serial</th>
+                                
                                 <th>Date</th>
+                                <th>Vehicle Type</th>
+                                <th>V_ID</th>
+                                <th>Driver's Name</th>
+                                <th>2nd seater's Name</th>
                                 <th>Authority</th>
                                 <th>Destination</th>
-                                <th>KM READING</th>
-                                 <th>When out</th>
-                                 <th>When in</th>
-                                   
-                                <th>Present Fuel</th>
-                                <th>Last refueling date</th>
-                                <th>Last maintenance date</th>
+                                <th>KM Reading</th>
+                        
+                                 <th>Start Time</th>
+                                 <th>End Time</th>
+                                 <th>Fuel</th>
+                                <th>Last maint date</th>
+                                <th>Comment</th>
 
                             </tr>
-
-                            <tr>
-                                <td>1</td>
-                                <td>01.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>0730</td>
-                                <td>1350</td>
-                                <td>30L</td>
-                                <td>15.09.22</td>
-                                <td>07.09.22</td>
-                            </tr>
-
-
-                            <tr>
-                                <td>2</td>
-                                <td>03.10.22</td>
-                                <td>Ammenity</td>
-                                <td>GEC circle</td>
-                                <td>60km</td>
-                                <td>1030</td>
-                                <td>1850</td>
-                                <td>12L</td>
-                                <td>05.09.22</td>
-                                <td>27.09.22</td>
-                            </tr>
-
-
-                            <tr>
-                                <td>3</td>
-                                <td>04.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>0730</td>
-                                <td>1350</td>
-                                <td>30L</td>
-                                <td>15.09.22</td>
-                                <td>07.09.22</td>
-                            </tr>
-
-
-                            <tr>
-                                <td>4</td>
-                                <td>07.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>0730</td>
-                                <td>1350</td>
-                                <td>30L</td>
-                                <td>15.09.22</td>
-                                <td>07.09.22</td>
-                            </tr>
-                            
                             </thead>
+
+                            
+                            @foreach($data as $data)
+                        <tr>
+                            <td>{{$data->date}}</td>
+                            <td>{{$data->vehicle_type}}</td>
+                            <td>{{$data->v_id}}</td>
+                            <td>{{$data->drivers_name}}</td>
+                            <td>{{$data->second_seater_name}}</td>
+                            <td>{{$data->authority}}</td>
+                            <td>{{$data->destination}}</td>
+                            <td>{{$data->km_reading}}</td>
+                            <td>{{$data->start_time}}</td>
+                            <td>{{$data->probable_end_time}}</td>
+                            <td>{{$data->present_fuel}}</td>
+                            <td>{{$data->last_maintenance_date}}</td>
+                            <td>{{$data->comment}}</td>
+
+                        </tr>
+                        @endforeach
+
+
+
+                        <tr>
+                                
+                                <td>01.10.22</td>
+                                <td>Jeep</td>
+                                <td>102932</td>
+                                <td>Lcpl Momin Haque</td>
+                                <td>Snk Ali Hossain</td>
+                                <td>Training</td>
+                                <td>Jessore</td>
+                                <td>1530hr</td>
+                                <td>25.10.22</td>
+                                <td>Request</td>
+                            </tr>
+
+
+                            <tr>
+                                
+                                <td>06.10.22</td>
+                                <td>3Ton</td>
+                                <td>102932</td>
+                                <td>Lcpl Momin Haque</td>
+                                <td>Snk Ali Hossain</td>
+                                <td>Training</td>
+                                <td>Jessore</td>
+                                <td>1530hr</td>
+                                <td>25.10.22</td>
+                                <td>Request</td>
+                            </tr>
+
+
+
+                            <tr>
+                                
+                                <td>09.10.22</td>
+                                <td>Pickup</td>
+                                <td>102932</td>
+                                <td>Lcpl Momin Haque</td>
+                                <td>Snk Ali Hossain</td>
+                                <td>Training</td>
+                                <td>Jessore</td>
+                                <td>1530hr</td>
+                                <td>25.10.22</td>
+                                <td>Request</td>
+                            </tr>
+
+
+
+                            <tr>
+                                
+                                <td>23.10.22</td>
+                                <td>Jeep</td>
+                                <td>102932</td>
+                                <td>Lcpl Momin Haque</td>
+                                <td>Snk Ali Hossain</td>
+                                <td>Training</td>
+                                <td>Jessore</td>
+                                <td>1530hr</td>
+                                <td>25.10.22</td>
+                                <td>Request</td>
+                            </tr>
+
+                            
+                           
+
 
 
 
@@ -118,6 +153,8 @@
             <a href="{{url('/addrequest')}}">ADD REQUEST</a>
         </div>
     </section>
+
+    
 </div>
 
 <script src="js/jquery.min.js"></script>

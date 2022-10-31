@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5" style="top:20px;">
-                    <h2 class="heading-section" style="color:black;">Jeep LIST</h2>
+                    <h2 class="heading-section" style="color:black;">DRIVERS LIST</h2>
                 </div>
             </div>
             <div class="row">
@@ -35,13 +35,16 @@
                             <thead class="thead-dark">
                                 
                             <tr>
-                                <th>Serial</th>
-                                <th>V_ID</th>
-                                <th>V_Name</th>
-                                <th>License Number</th>
-                                <th>Authorized Mileage</th>
-                                <th>Authorized Fuel</th>
-                                <th>...</th>
+                            <th>Snk No</th>
+                                <th>Rank</th>
+                                <th>Name</th>
+                
+                                <th>Date of Birth</th>
+                                
+                                <th>License Expire Date</th>
+                                <th>Able to Drive</th>
+                                <th>Experience Yr</th>
+                                <th>Image</th>
                                  
                                    
                     
@@ -49,57 +52,49 @@
                             </tr>
 
                             <tr>
-                                <td>1</td>
-                                <td>011022</td>
-                                <td>jeep1</td>
-                                <td>1234</td>
-                                <td>110km</td>
-                                <td>123l</td>
-                                <td><a href="{{url('/jeep1')}}">Read More</a></td>
+                                <td>10548</td>
+                                <td>Cpl</td>
+                                <td>Alamin Islam</td>
+                                <td>20.12.1990</td>
+                                <td>12.03.2017</td>
+                                <td>Jeep, Pick up, 3Ton</td>
+                                <td>5yr</td>
+                                
+                                <td><img src="assets/images/me.jpeg" width="20px"></td>
+                                </div>
 
                                 
                             </tr>
 
 
                             <tr>
-                                <td>2</td>
-                                <td>03.10.22</td>
-                                <td>Ammenity</td>
-                                <td>GEC circle</td>
-                                <td>60km</td>
-                                <td>123l</td>
-                                <td><a href>Read More</a></td>
+                                <td>10793</td>
+                                <td>Lcpl</td>
+                                <td>Momin Haque</td>
+                                <td>20.04.1995</td>
+                                <td>12.03.2018</td>
+                                <td>Jeep, Pick up</td>
+                                <td>3yr</td>
+                                <td><img src="assets/images/me.jpeg" width="20px"></td>
 
-                                
                                 
                             </tr>
-
 
                             <tr>
-                                <td>3</td>
-                                <td>04.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>123l</td>
-                                <td><a href>Read More</a></td>
-                                
+                                <td>10997</td>
+                                <td>Snk</td>
+                                <td>Shamim Shikder</td>
+                                <td>15.09.1996</td>
+                                <td>12.03.2020</td>
+                                <td>Jeep</td>
+                                <td>2yr</td>
+                                <td><img src="assets/images/me.jpeg" width="20px"></td>
+
+                                    
                                 
                             </tr>
 
-
-                            <tr>
-                                <td>4</td>
-                                <td>07.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>123l</td>
-                                <td><a href>Read More</a></td>
-
-                                
-                            
-                            </tr>
+                           
                             
                             </thead>
 

@@ -13,21 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('requestlist', function (Blueprint $table) {
+        Schema::create('addjeeps', function (Blueprint $table) {
             $table->id();
-            $table->date("date");
-            $table->string("vehicle_type");
-            $table->string("v_id")->unique();
-            $table->string("driver's_name");
-            $table->string("2nd_seater's_name");
+            $table->string("date");
             $table->string("authority");
             $table->string("destination");
             $table->string("km_reading");
-            $table->time("start_time");
-            $table->time("probable_end_time");
+            $table->string("when_out");
+            $table->string("when_in");
             $table->string("present_fuel");
-            $table->date("last_maintenance_date");
-            $table->date("comment");
+            $table->string("last_refuelling_date");
+            $table->string("last_maintenance_date");
             $table->timestamps();
         });
     }
@@ -39,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('requestlist');
+        Schema::dropIfExists('addjeeps');
     }
 };

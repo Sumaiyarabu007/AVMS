@@ -29,7 +29,7 @@
                     <form id="contact" action="" method="post">
                       <div class="row">
                         <div class="col-lg-12">
-                            <h4>ADD VEHICLE</h4>
+                            <h4>ADD JEEP</h4>
                         </div>
 
 
@@ -127,12 +127,12 @@
                             <button type="submit" id="form-submit" class="main-button-icon">Submit</button>
                           </fieldset>
                         </div>
-                          
-
 
                        
                       </div>
                     </form>
+
+
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5" style="top:20px;">
-                    <h2 class="heading-section" style="color:black;">PICKUP LIST</h2>
+                    <h2 class="heading-section" style="color:black;">3TON LIST</h2>
                 </div>
             </div>
             <div class="row">
@@ -113,7 +113,7 @@
             <br>
             <br>
             <div class="container">
-            <a href="{{url('/addjeep')}}">ADD Jeep</a>
+            <a href="{{url('/add3ton')}}">ADD 3TON</a>
             </div>
         </div>
     </section>

@@ -31,11 +31,17 @@ Route::get("/ton",[MtncoController::class,"ton"]);
 Route::get("/pickup",[MtncoController::class,"pickup"]);
 Route::get("/jeep1",[MtncoController::class,"jeep1"]);
 Route::get("/addjeep",[MtncoController::class,"addjeep"]);
+Route::get("/add3ton",[MtncoController::class,"add3ton"]);
+Route::get("/addpickup",[MtncoController::class,"addpickup"]);
+
+
 
 Route::get("/drivers",[MtncoController::class,"drivers"]);
 Route::get("/requestlist",[MtncoController::class,"requestlist"]);
+Route::post("/requestlist",[MtncoController::class,"upload"]);
 Route::get("/adddriver",[MtncoController::class,"adddriver"]);
-Route::get("/addrequest",[MtncoController::class,"addrequest"]);
+Route::get("/addrequest",[MtncoController::class,"getrequest"]);
+Route::post("/addrequest",[MtncoController::class,"upload"]);
 
 
 
