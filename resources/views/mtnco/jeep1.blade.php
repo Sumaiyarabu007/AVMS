@@ -41,8 +41,7 @@
                                  <th>When in</th>
                                    
                                 <th>Present Fuel</th>
-                                <th>Last refueling date</th>
-                                <th>Last maintenance date</th>
+                            
 
                             </tr>
 
@@ -55,8 +54,7 @@
                                 <td>0730</td>
                                 <td>1350</td>
                                 <td>30L</td>
-                                <td>15.09.22</td>
-                                <td>07.09.22</td>
+                              
                             </tr>
 
 
@@ -69,8 +67,7 @@
                                 <td>1030</td>
                                 <td>1850</td>
                                 <td>12L</td>
-                                <td>05.09.22</td>
-                                <td>27.09.22</td>
+                               
                             </tr>
 
 
@@ -83,8 +80,7 @@
                                 <td>0730</td>
                                 <td>1350</td>
                                 <td>30L</td>
-                                <td>15.09.22</td>
-                                <td>07.09.22</td>
+                                
                             </tr>
 
 
@@ -97,8 +93,7 @@
                                 <td>0730</td>
                                 <td>1350</td>
                                 <td>30L</td>
-                                <td>15.09.22</td>
-                                <td>07.09.22</td>
+                                
                             </tr>
                             
                             </thead>
@@ -115,7 +110,7 @@
             <br>
             <br>
 
-            <a href="{{url('/adddriver')}}">ADD Info</a>
+            <a href="{{url('/addinfo')}}">ADD Info</a>
         </div>
     </section>
 </div>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Jeep1 Info</title>
+    <title>Add Jeep</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,102 +26,76 @@
              
             <div class="col-lg-6">
                 <div class="contact-form">
-                    <form id="contact" action="" method="post">
+                <form id="contact" action="/jeeplist" method="post" enctype="multipart/form-data">
+
+                      @csrf
                       <div class="row">
                         <div class="col-lg-12">
                             <h4>ADD JEEP</h4>
                         </div>
 
 
+                        
+                        
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">V_ID</h6>
+                          <fieldset>
+                            <input name="v_id" type="text" placeholder="" required="">
+                          </fieldset>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">V_Name</h6>
+                          <fieldset>
+                            <input name="v_name" type="text" id="" placeholder="" required="">
+                          </fieldset>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">License Number</h6>
+                          <fieldset>
+                            <input name="license_number" type="text" id="" placeholder="" required="">
+                          </fieldset>
+                        </div>
+
+                       
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">Authorized Mileage</h6>
+                          <fieldset>
+                          <input name="authorized_mileage" type="distance" id="distance" placeholder="" required="">
+                        </fieldset>
+                        
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                        <h6 style="color:black;">Authorized Fuel</h6>
+                          <fieldset>
+                          <input name="authorized_fuel" type="litre" id="litre" placeholder="" required="">
+                        </fieldset>
+                        
+                        </div>
+
+                       
+
 
                         <div class="col-lg-6">
-                        <h6 style="color:black;">Date</h6>
-                            <div id="filterDate2">    
-                              <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                <div class="input-group-addon" >
-                                  <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                              </div>
-                            </div>   
-                        </div>
-                        
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Authority</h6>
-                          <fieldset>
-                            <input name="name" type="text" placeholder="" required="">
-                          </fieldset>
-                        </div>
+<h6 style="color:black;">Collection Date</h6>
+    <input type="date" name="collection_date" value="date-one" >
+</div>
+<div class="col-lg-6">
+<h6 style="color:black;">Last Maintenance Date</h6>
+    <input type="date" name="last_maintenance_date" value="date-two">
+</div>
 
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Destination</h6>
-                          <fieldset>
-                            <input name="place" type="place" id="place" placeholder="" required="">
-                          </fieldset>
-                        </div>
+<div class="col-lg-6">
+<h6 style="color:black;">Last Refuelling Date</h6>
+    <input type="date" name="last_maintenance_date" value="date-two">
+</div>
+<br>
+<br>                      
 
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">KM Reading</h6>
-                          <fieldset>
-                            <input name="distance" type="distance" id="distance" placeholder="" required="">
-                          </fieldset>
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">When Out</h6>
-                          <fieldset>
-                          <input name="time" type="time" id="time" placeholder="when Out" required="">
-                        </fieldset>
-                        
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">When In</h6>
-                          <fieldset>
-                          <input name="time" type="time" id="time" placeholder="when In" required="">
-                        </fieldset>
-                        
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Present Fuel</h6>
-                          <fieldset>
-                          <input name="fuel" type="litre" id="litre" placeholder="" required="">
-                        </fieldset>
-                        
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Last Refuelling Date</h6>
-                        <div id="filterDate2">    
-                              <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                <div class="input-group-addon" >
-                                  <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                              </div>
-                            </div>   
-                        </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Last Maintenace Date</h6>
-                        <div id="filterDate2">    
-                              <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                <div class="input-group-addon" >
-                                  <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                              </div>
-                            </div>   
-                        </div>
-                       
-                        <br> 
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">Comments</h6>
-                          <fieldset>
-                            <textarea name="message" rows="6" id="message" placeholder="" required=""></textarea>
-                          </fieldset>
-                        </div>
                         <div class="col-lg-12">
                           <fieldset>
                             <button type="submit" id="form-submit" class="main-button-icon">Submit</button>

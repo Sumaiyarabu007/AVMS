@@ -36,14 +36,35 @@ Route::get("/addpickup",[MtncoController::class,"addpickup"]);
 
 
 
-Route::get("/drivers",[MtncoController::class,"drivers"]);
+//requestlist
 Route::get("/requestlist",[MtncoController::class,"requestlist"]);
 Route::post("/requestlist",[MtncoController::class,"upload"]);
-Route::get("/adddriver",[MtncoController::class,"adddriver"]);
 Route::get("/addrequest",[MtncoController::class,"getrequest"]);
 Route::post("/addrequest",[MtncoController::class,"upload"]);
+//
 
+//driver
+Route::get("/drivers",[MtncoController::class,"drivers"]);
+Route::post("/drivers",[MtncoController::class,"uploaddriver"]);
+Route::get("/adddriver",[MtncoController::class,"getdriver"]);
+Route::post("/adddriver",[MtncoController::class,"uploaddriver"]);
+//
 
+//jeeplist
+Route::get("/jeeplist",[MtncoController::class,"jeeplist"]);
+Route::post("/jeeplist",[MtncoController::class,"uploadjeep"]);
+Route::get("/addjeep",[MtncoController::class,"getjeep"]);
+Route::post("/addjeep",[MtncoController::class,"uploadjeep"]);
+//
+
+//infolist
+Route::get("/infolist",[MtncoController::class,"infolist"]);
+Route::post("/infolist",[MtncoController::class,"uploadinfo"]);
+Route::get("/addinfo",[MtncoController::class,"getinfo"]);
+Route::post("/addinfo",[MtncoController::class,"uploadinfo"]);
+//
+
+Route::get("/addinfo",[MtncoController::class,"addinfo"]);
 
 
 Route::middleware([

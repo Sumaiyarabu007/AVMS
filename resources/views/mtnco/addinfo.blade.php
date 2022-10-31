@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Add Request</title>
+    <title>Add Info</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,13 +26,13 @@
              
             <div class="col-lg-6">
                 <div class="contact-form">
-                    <form id="contact" action="/requestlist" method="post" enctype="multipart/form-data">
+                    <form id="contact" action="/infolist" method="post" enctype="multipart/form-data">
 
                         @csrf 
 
                       <div class="row">
                         <div class="col-lg-12">
-                            <h4>ADD REQUEST</h4>
+                            <h4>ADD INFO</h4>
                         </div>
 
 
@@ -52,39 +52,6 @@
 <h6 style="color:black;">Date</h6>
     <input type="date" name="date" value="date-one" >
 </div>
-
-
-    <div class="col-md-6 col-sm-12">
-    <h6 style="color:black;">Vehicle Type</h6>
-      <fieldset>
-      <select name="vehicle_type" id="cars">
-  <option value="jeep">Jeep</option>
-  <option value="pickup">Pickup</option>
-  <option value="3ton">3Ton</option>
-  <option value="ambulance">Ambulance</option>
-</select>      </fieldset>
-    </div>
-
-    <div class="col-lg-6 col-sm-12">
-    <h6 style="color:black;">V_ID</h6>
-      <fieldset>
-        <input name="v_id" type="text" placeholder="" required="">
-      </fieldset>
-    </div>
-
-    <div class="col-lg-6 col-sm-12">
-    <h6 style="color:black;">Driver's Name</h6>
-      <fieldset>
-        <input name="drivers_name" type="text" placeholder="" required="">
-      </fieldset>
-    </div>
-
-    <div class="col-lg-6 col-sm-12">
-    <h6 style="color:black;">2nd Seater's Name</h6>
-      <fieldset>
-        <input name="second_seater_name" type="text" placeholder="" required="">
-      </fieldset>
-    </div>
     
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Authority</h6>
@@ -114,17 +81,17 @@
     </div>
 
     <div class="col-lg-6 col-sm-12">
-    <h6 style="color:black;">Start Time</h6>
+    <h6 style="color:black;">When In</h6>
       <fieldset>
-      <input name="start_time" type="time" id="time" placeholder="when Out" required="">
+      <input name="when_in" type="time" id="time" placeholder="when in" required="">
     </fieldset>
     
     </div>
 
     <div class="col-lg-6 col-sm-12">
-    <h6 style="color:black;">Probable End Time</h6>
+    <h6 style="color:black;">When Out</h6>
       <fieldset>
-      <input name="probable_end_time" type="time" id="time" placeholder="when In" required="">
+      <input name="when_out" type="time" id="time" placeholder="when out" required="">
     </fieldset>
     
     </div>
@@ -132,15 +99,12 @@
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Present Fuel</h6>
       <fieldset>
-      <input name="fuel" type="litre" id="litre" placeholder="" required="">
+      <input name="present_fuel" type="litre" id="litre" placeholder="" required="">
     </fieldset>
     </div>
 
 
-    <div class="col-lg-6">
-<h6 style="color:black;">Last Maintenance Date</h6>
-    <input type="date" name="last_maintenance_date" value="date-two">
-</div>
+
 
 <!-- 
     <div class="col-lg-6 col-sm-12">
