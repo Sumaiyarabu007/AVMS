@@ -6,10 +6,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Requestlist;
 use App\Models\User;
-use App\Models\Addjeep;
 use App\Models\Driverlist;
 use App\Models\Jeeplist;
 use App\Models\Infolist;
+use App\Models\tonlist;
+use PDF;
+use Auth;
+
+
 
 
 use Illuminate\Http\Request;
@@ -41,9 +45,47 @@ class MtncoController extends Controller
         $data->authorized_mileage =$request->authorized_mileage;
         $data->authorized_fuel =$request->authorized_fuel;
         $data->collection_date =$request->collection_date;
+        $data->last_maintenance_date =$request->last_maintenance_date;
+        $data->last_refuelling_date =$request->last_refuelling_date;
         $data->save();
         return redirect() ->back() ;
     }
+
+    public function showjeep()
+    {
+        $data=jeeplist::all();
+        return view("mtnco.jeeplist",compact("data"));
+    }
+
+
+//
+
+//tonlist   
+public function tonlist()
+{
+    $data=user::all();
+    return view("mtnco.tonlist",compact("data"));
+}
+
+public function getton()
+{
+    $data=user::all();
+    return view("mtnco.add3ton",compact("data"));
+}
+
+public function uploadton(Request $request)
+{
+    $data= new TonList;
+
+    $data->v_id =  $request->v_id;
+    $data->v_name =$request->v_name;
+    $data->license_number =$request->license_number;
+    $data->authorized_mileage =$request->authorized_mileage;
+    $data->authorized_fuel =$request->authorized_fuel;
+    $data->collection_date =$request->collection_date;
+    $data->save();
+    return redirect() ->back() ;
+}
 
 //
 
@@ -78,6 +120,13 @@ class MtncoController extends Controller
         return view("mtnco.addinfo",compact("data"));
     }
 
+    public function addvehicle()
+    {
+        $data=user::all();
+        return view("mtnco.addvehicle",compact("data"));
+    }
+
+
  //addinfo
  public function infolist()
  {
@@ -107,7 +156,13 @@ class MtncoController extends Controller
      return redirect() ->back() ;
  }
 
- 
+ public function showinfo()
+ {
+     $data=infolist::all();
+     return view("mtnco.jeep1",compact("data"));
+ }
+
+ //
 
  //drivers   
 
@@ -178,6 +233,12 @@ class MtncoController extends Controller
         return redirect() ->back() ;
     }
 
+    public function show()
+    {
+        $data=requestlist::all();
+        return view("mtnco.requestlist",compact("data"));
+    }
+
 //
 
 
@@ -192,6 +253,21 @@ class MtncoController extends Controller
         $data=user::all();
         return view("mtnco.addpickup",compact("data"));
     }
+
+    public function downloadvdra()
+    {
+        $downloadvdra= Infolist::get();
+        $pdf = PDF::loadView('mtnco.downloadvdra',[
+            'downloadvdra' => $downloadvdra
+        ]);
+        //return $pdf->download('vdra.pdf');
+        return $pdf -> stream();
+        
+    }
+
+    
+
+
 
     
     

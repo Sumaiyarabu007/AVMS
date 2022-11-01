@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                    <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" style="background-color:White" aria-labelledby="profile-dropdown">
                         <a href="#" class="dropdown-item preview-item">
                             <div class="preview-thumbnail">
                                 <div class="preview-icon bg-dark rounded-circle">
@@ -25,7 +25,7 @@
                                 </div>
                             </div>
                             <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                                <p class="preview-subject ellipsis mb-1 text-small">Home</p>
                             </div>
                         </a>
                         <div class="dropdown-divider"></div>
@@ -47,12 +47,18 @@
                                 </div>
                             </div>
                             <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                                <p class="preview-subject ellipsis mb-1 text-small">Log Out</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </li>
+<br>
+            <form type="get" action="{{url('/search')}}">
+    <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search Vehicle">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+</form>
+
             <li class="nav-item nav-category">
                 <span class="nav-link">Navigation</span>
             </li>
@@ -68,10 +74,18 @@
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
                         <li class="nav-item"> <a class="nav-link" href="{{url('/jeeplist')}}">Jeep</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{url('/ton')}}">3ton</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/tonlist')}}">3ton</a></li>
                         <li class="nav-item"> <a class="nav-link" href="{{url('/pickup')}}">Pickup</a></li>
                     </ul>
                 </div>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="{{url('/addvehicle')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+                    <span class="menu-title">Add Vehicle</span>
+                </a>
             </li>
             <li class="nav-item menu-items">
                 <a class="nav-link" href="{{url('/drivers')}}">
@@ -99,7 +113,6 @@
             </li>
 
         </ul>
-
 
 
         <!-- partial -->

@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('addjeeps', function (Blueprint $table) {
+        
+        Schema::create('jeeplists', function (Blueprint $table) {
             $table->id();
-            $table->string("date");
-            $table->string("authority");
-            $table->string("destination");
-            $table->string("km_reading");
-            $table->string("when_out");
-            $table->string("when_in");
-            $table->string("present_fuel");
-            $table->string("last_refuelling_date");
+            $table->string("v_id");
+            $table->string("v_name");
+            $table->string("license_number");
+            $table->string("authorized_mileage");
+            $table->string("authorized_fuel");
+            $table->string("collection_date");
             $table->string("last_maintenance_date");
+            $table->string("last_refuelling_date");
             $table->timestamps();
         });
     }
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('addjeeps');
+        //
     }
 };

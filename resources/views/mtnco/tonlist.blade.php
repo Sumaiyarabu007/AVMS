@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Jeep1 Info</title>
+    <title>3TON LIST</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5" style="top:20px;">
-                    <h2 class="heading-section" style="color:black;">PICKUP LIST</h2>
+                    <h2 class="heading-section" style="color:black;">3TON LIST</h2>
                 </div>
             </div>
             <div class="row">
@@ -50,7 +50,7 @@
                             <tr>
                                 <td>1</td>
                                 <td>011022</td>
-                                <td>Pickup1</td>
+                                <td>jeep1</td>
                                 <td>1234</td>
                                 <td>110km</td>
                                 <td>123l</td>
@@ -62,11 +62,11 @@
 
                             <tr>
                                 <td>2</td>
-                                <td>031022</td>
-                                <td>Pickup2</td>
-                                <td>5678</td>
+                                <td>03.10.22</td>
+                                <td>Ammenity</td>
+                                <td>GEC circle</td>
                                 <td>60km</td>
-                                <td>123L</td>
+                                <td>123l</td>
                                 <td><a href>Read More</a></td>
 
                                 
@@ -76,11 +76,11 @@
 
                             <tr>
                                 <td>3</td>
-                                <td>041022</td>
-                                <td>Pickup3</td>
-                                <td>9023</td>
+                                <td>04.10.22</td>
+                                <td>Training</td>
+                                <td>Firing range</td>
                                 <td>77km</td>
-                                <td>232L</td>
+                                <td>123l</td>
                                 <td><a href>Read More</a></td>
                                 
                                 
@@ -89,11 +89,11 @@
 
                             <tr>
                                 <td>4</td>
-                                <td>071022</td>
-                                <td>Pickup4</td>
-                                <td>3475</td>
+                                <td>07.10.22</td>
+                                <td>Training</td>
+                                <td>Firing range</td>
                                 <td>77km</td>
-                                <td>123L</td>
+                                <td>123l</td>
                                 <td><a href>Read More</a></td>
 
                                 
@@ -112,7 +112,9 @@
             </div>
             <br>
             <br>
-            <a class="btn btn-success" href="{{url('/addpickup')}}">ADD PICKUP</a>
+            <div class="container">
+            <a href="{{url('/add3ton')}}">ADD 3TON</a>
+            </div>
         </div>
     </section>
 </div>

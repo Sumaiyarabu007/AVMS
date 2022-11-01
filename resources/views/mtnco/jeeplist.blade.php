@@ -35,71 +35,42 @@
                             <thead class="thead-dark">
                                 
                             <tr>
-                                <th>Serial</th>
+                                <th>Ser</th>
                                 <th>V_ID</th>
                                 <th>V_Name</th>
-                                <th>License Number</th>
-                                <th>Authorized Mileage</th>
-                                <th>Authorized Fuel</th>
-                                <th>...</th>
+                                <th>License No.</th>
+                                <th>Mileage</th>
+                                <th>Fuel</th>
+                                <th>Collection Date</th>
+                                <th>Last Maint Date</th>
+                                <th>Last Refuelling Date</th>
+                                <th>Read</th>
                                  
                                    
                     
 
                             </tr>
 
-                            <tr>
-                                <td>1</td>
-                                <td>011022</td>
-                                <td>Jeep1</td>
-                                <td>1234</td>
-                                <td>110km</td>
-                                <td>123L</td>
-                                <td><a href="{{url('/jeep1')}}">Read More</a></td>
+                            @foreach($data as $data)
+                        <tr>
+                            <td>{{$data->id}}</td>
+                            <td>{{$data->v_id}}</td>
+                            <td>{{$data->v_name}}</td>
+                         
+                            <td>{{$data->license_number}}</td>
+                            <td>{{$data->authorized_mileage}}</td>
+                            <td>{{$data->authorized_fuel}}</td>
+                            <td>{{$data->collection_date}}</td>
+                            <td>{{$data->last_maintenance_date}}</td>
+                            <td>{{$data->last_refuelling_date}}</td>
+                            <td><a class="btn btn-success" href="{{url('/jeep1')}}">read</a></td>
+                        
 
-                                
-                            </tr>
-
-
-                            <tr>
-                                <td>2</td>
-                                <td>107493</td>
-                                <td>Jeep2</td>
-                                <td>5678</td>
-                                <td>60km</td>
-                                <td>175L</td>
-                                <td><a href>Read More</a></td>
-
-                                
-                                
-                            </tr>
+                        </tr>
+                        @endforeach
 
 
-                            <tr>
-                                <td>3</td>
-                                <td>567832</td>
-                                <td>Jeep3</td>
-                                <td>9087</td>
-                                <td>77km</td>
-                                <td>100L</td>
-                                <td><a href>Read More</a></td>
-                                
-                                
-                            </tr>
 
-
-                            <tr>
-                                <td>4</td>
-                                <td>073456</td>
-                                <td>Jeep4</td>
-                                <td>2834</td>
-                                <td>77km</td>
-                                <td>123L</td>
-                                <td><a href>Read More</a></td>
-
-                                
-                            
-                            </tr>
                             
                             </thead>
 
@@ -113,7 +84,7 @@
             </div>
             <br>
             <br>
-            <a href="{{url('/addjeep')}}">ADD Jeep</a>
+            <a class="btn btn-success" href="{{url('/addjeep')}}">ADD Jeep</a>
             
 
         </div>

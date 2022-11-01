@@ -1,7 +1,8 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Jeep1 Info</title>
+    <title>Jeeplist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,20 +12,20 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    @include("mtnco.mtncocss")
+    @include("admin.admincss")
 
 </head>
 <body>
     
 
 <div class="container-scroller" style="background-color:White">
-    @include("mtnco.navbar")
+    @include("admin.navbar")
     
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5" style="top:20px;">
-                    <h2 class="heading-section" style="color:black;">3TON LIST</h2>
+                    <h2 class="heading-section" style="color:black;">Jeep LIST</h2>
                 </div>
             </div>
             <div class="row">
@@ -50,11 +51,11 @@
                             <tr>
                                 <td>1</td>
                                 <td>011022</td>
-                                <td>jeep1</td>
+                                <td>Jeep1</td>
                                 <td>1234</td>
                                 <td>110km</td>
-                                <td>123l</td>
-                                <td><a href="{{url('/jeep1')}}">Read More</a></td>
+                                <td>123L</td>
+                                <td><a href="{{url('/adminjeep1')}}">Read More</a></td>
 
                                 
                             </tr>
@@ -62,11 +63,11 @@
 
                             <tr>
                                 <td>2</td>
-                                <td>03.10.22</td>
-                                <td>Ammenity</td>
-                                <td>GEC circle</td>
+                                <td>107493</td>
+                                <td>Jeep2</td>
+                                <td>5678</td>
                                 <td>60km</td>
-                                <td>123l</td>
+                                <td>175L</td>
                                 <td><a href>Read More</a></td>
 
                                 
@@ -76,11 +77,11 @@
 
                             <tr>
                                 <td>3</td>
-                                <td>04.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
+                                <td>567832</td>
+                                <td>Jeep3</td>
+                                <td>9087</td>
                                 <td>77km</td>
-                                <td>123l</td>
+                                <td>100L</td>
                                 <td><a href>Read More</a></td>
                                 
                                 
@@ -89,11 +90,11 @@
 
                             <tr>
                                 <td>4</td>
-                                <td>07.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
+                                <td>073456</td>
+                                <td>Jeep4</td>
+                                <td>2834</td>
                                 <td>77km</td>
-                                <td>123l</td>
+                                <td>123L</td>
                                 <td><a href>Read More</a></td>
 
                                 
@@ -112,9 +113,9 @@
             </div>
             <br>
             <br>
-            <div class="container">
-            <a href="{{url('/add3ton')}}">ADD 3TON</a>
-            </div>
+            
+            
+
         </div>
     </section>
 </div>
@@ -124,7 +125,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
-@include("mtnco.mtncoscript")
+@include("admin.adminscript")
 
 </body>
 </html>

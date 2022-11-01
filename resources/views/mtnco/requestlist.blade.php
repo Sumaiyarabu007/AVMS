@@ -18,10 +18,10 @@
 </head>
 <body>
     
-<div class="container-scroller" style="background-color:White">
+<div class="container-scroller" style="background-color:White" >
     @include("mtnco.navbar")
     <section class="ftco-section">
-        <div class="container">
+        <div class="container" style="overflow-x:auto;">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center mb-5" style="top:20px;">
                     <h2 class="heading-section" style="color:black;">REQUEST LIST</h2>
@@ -34,15 +34,15 @@
                             <thead class="thead-dark">
                                 
                             <tr>
-                                
+                            <th>Ser</th>
                                 <th>Date</th>
-                                <th>Vehicle Type</th>
+                                <th>Veh Type</th>
                                 <th>V_ID</th>
-                                <th>Driver's Name</th>
-                                <th>2nd seater's Name</th>
+                                <th>Driver</th>
+                                <th>2nd Seater</th>
                                 <th>Authority</th>
-                                <th>Destination</th>
-                                <th>KM Reading</th>
+                                <th>Place</th>
+                                <th>KM</th>
                         
                                  <th>Start Time</th>
                                  <th>End Time</th>
@@ -56,6 +56,7 @@
                             
                             @foreach($data as $data)
                         <tr>
+                        <td>{{$data->id}}</td>
                             <td>{{$data->date}}</td>
                             <td>{{$data->vehicle_type}}</td>
                             <td>{{$data->v_id}}</td>
@@ -75,71 +76,6 @@
 
 
 
-                        <tr>
-                                
-                                <td>01.10.22</td>
-                                <td>Jeep</td>
-                                <td>102932</td>
-                                <td>Lcpl Momin Haque</td>
-                                <td>Snk Ali Hossain</td>
-                                <td>Training</td>
-                                <td>Jessore</td>
-                                <td>1530hr</td>
-                                <td>25.10.22</td>
-                                <td>Request</td>
-                            </tr>
-
-
-                            <tr>
-                                
-                                <td>06.10.22</td>
-                                <td>3Ton</td>
-                                <td>102932</td>
-                                <td>Lcpl Momin Haque</td>
-                                <td>Snk Ali Hossain</td>
-                                <td>Training</td>
-                                <td>Jessore</td>
-                                <td>1530hr</td>
-                                <td>25.10.22</td>
-                                <td>Request</td>
-                            </tr>
-
-
-
-                            <tr>
-                                
-                                <td>09.10.22</td>
-                                <td>Pickup</td>
-                                <td>102932</td>
-                                <td>Lcpl Momin Haque</td>
-                                <td>Snk Ali Hossain</td>
-                                <td>Training</td>
-                                <td>Jessore</td>
-                                <td>1530hr</td>
-                                <td>25.10.22</td>
-                                <td>Request</td>
-                            </tr>
-
-
-
-                            <tr>
-                                
-                                <td>23.10.22</td>
-                                <td>Jeep</td>
-                                <td>102932</td>
-                                <td>Lcpl Momin Haque</td>
-                                <td>Snk Ali Hossain</td>
-                                <td>Training</td>
-                                <td>Jessore</td>
-                                <td>1530hr</td>
-                                <td>25.10.22</td>
-                                <td>Request</td>
-                            </tr>
-
-                            
-                           
-
-
 
 
 
@@ -152,7 +88,7 @@
             <br>
             <br>
             
-            <a href="{{url('/addrequest')}}">ADD REQUEST</a>
+            <a class="btn btn-success" href="{{url('/addrequest')}}">ADD REQUEST</a>
         </div>
     </section>
 

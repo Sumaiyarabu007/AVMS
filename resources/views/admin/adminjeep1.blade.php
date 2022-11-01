@@ -11,13 +11,13 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    @include("mtnco.mtncocss")
+    @include("admin.admincss")
 
 </head>
 <body>
     
 <div class="container-scroller" style="background-color:White">
-    @include("mtnco.navbar")
+    @include("admin.navbar")
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -41,27 +41,60 @@
                                  <th>When in</th>
                                    
                                 <th>Present Fuel</th>
-                                <th>Rmks</th>
+                            
 
                             </tr>
 
-                            @foreach($data as $data)
-                        <tr>
-                        <td>{{$data->id}}</td>
-                            <td>{{$data->date}}</td>
-                            <td>{{$data->authority}}</td>
-                            <td>{{$data->destination}}</td>
-                            <td>{{$data->km_reading}}</td>
-                            <td>{{$data->when_out}}</td>
-                            <td>{{$data->when_in}}</td>
-                            
-                            <td>{{$data->present_fuel}}</td>
-                            
-                            <td>{{$data->comment}}</td>
+                            <tr>
+                                <td>1</td>
+                                <td>01.10.22</td>
+                                <td>Training</td>
+                                <td>Firing range</td>
+                                <td>77km</td>
+                                <td>0730</td>
+                                <td>1350</td>
+                                <td>30L</td>
+                              
+                            </tr>
 
-                        </tr>
-                        @endforeach
 
+                            <tr>
+                                <td>2</td>
+                                <td>03.10.22</td>
+                                <td>Ammenity</td>
+                                <td>GEC circle</td>
+                                <td>60km</td>
+                                <td>1030</td>
+                                <td>1850</td>
+                                <td>12L</td>
+                               
+                            </tr>
+
+
+                            <tr>
+                                <td>3</td>
+                                <td>04.10.22</td>
+                                <td>Training</td>
+                                <td>Firing range</td>
+                                <td>77km</td>
+                                <td>0730</td>
+                                <td>1350</td>
+                                <td>30L</td>
+                                
+                            </tr>
+
+
+                            <tr>
+                                <td>4</td>
+                                <td>07.10.22</td>
+                                <td>Training</td>
+                                <td>Firing range</td>
+                                <td>77km</td>
+                                <td>0730</td>
+                                <td>1350</td>
+                                <td>30L</td>
+                                
+                            </tr>
                             
                             </thead>
 
@@ -76,12 +109,8 @@
 
             <br>
             <br>
-<ul>
-     <li>        <a class="btn btn-success" href="{{url('/addinfo')}}">ADD Info</a></li>
-     <br>
-     
-         <li>   <a class="btn btn-success" href="{{url('/downloadvdra')}}">Download VDRA</a></li>
-</ul>
+
+           
         </div>
     </section>
 </div>
@@ -91,7 +120,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
-@include("mtnco.mtncoscript")
+@include("admin.adminscript")
 
 </body>
 </html>

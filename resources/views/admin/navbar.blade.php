@@ -1,7 +1,7 @@
 
 <div class="container-scroller" style="background-color:White">
     <!-- partial:partials/_sidebar.html -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color:#092E20">
 
         <ul class="nav">
             <li class="nav-item profile">
@@ -25,7 +25,7 @@
                                 </div>
                             </div>
                             <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                                <p class="preview-subject ellipsis mb-1 text-small">Home</p>
                             </div>
                         </a>
                         <div class="dropdown-divider"></div>
@@ -74,9 +74,9 @@
                 </a>
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{url('/adminjeeplist')}}">Jeep</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/ton')}}">3ton</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{url('/pickup')}}">Pickup</a></li>
                     </ul>
                 </div>
             </li>
@@ -97,7 +97,7 @@
                 </a>
             </li>
             <li class="nav-item menu-items">
-                <a class="nav-link" href="pages/charts/chartjs.html">
+                <a class="nav-link" href="{{url('/adminrequest')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>

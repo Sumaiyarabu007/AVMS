@@ -110,7 +110,7 @@
             </div>
             <br>
             <br>
-            <a href="{{url('/adddriver')}}">ADD Driver</a>
+            <a class="btn btn-success" href="{{url('/adddriver')}}">ADD Driver</a>
             
 
         </div>
